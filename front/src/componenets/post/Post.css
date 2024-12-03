@@ -1,0 +1,36 @@
+.post img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+}
+.post{
+    border: 1px solid #353535;
+    text-align: center;
+    border-radius: 3px;
+    font-family: "Work Sans", sans-serif;
+    padding-bottom: 10px;
+}
+.post p ,.post h3{
+    margin: 10px;
+    color: #353535;
+}
+.post p{
+ font-size: 16px;
+}
+.post h3{
+    font-size: 10px;
+}
+.post button{
+    padding: 10px 20px;
+    background-color: #D1AD8F;
+    color: #fff;
+    border: 1px solid #D1AD8F;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.post button:hover{
+    background-color: #fff;
+    color: #353535;
+    border: 1px solid #353535;
+}

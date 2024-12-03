@@ -1,0 +1,33 @@
+.posts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.posts-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 70%;
+}
+.posts-group a {
+    text-decoration: none;
+}
+.filter img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    font-family: "Work Sans", sans-serif;
+}
+.category{
+    text-align: center;
+}

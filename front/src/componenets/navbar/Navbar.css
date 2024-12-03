@@ -1,0 +1,24 @@
+.navbar{
+ border-bottom: 1px solid #353435;
+ margin-bottom: 20px;
+}
+.logo{
+    font-family: "Cinzel", serif;
+    color: #353435;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+}
+.logo span{
+    font-size: 16px;
+}
+.head img{
+    width: 50px;
+    margin-right: 10px;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
