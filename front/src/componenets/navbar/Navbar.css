@@ -19,6 +19,34 @@
 .head{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-family: "Work Sans", sans-serif;
+    margin-right: 50px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #353435;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navigation hr{
+    width: 30px;
+    display: none;
+}
+.navigation a p{
+margin-bottom: 5px;
+}
+a.active hr{
+    display: block;
 }

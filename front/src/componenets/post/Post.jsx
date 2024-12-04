@@ -7,7 +7,7 @@ const Post = ({image}) => {
             <div className="text">
             <p>neckless</p>
             <h3>2500DA</h3>
-            <button >Details</button>
+            <button >Détails</button>
             </div>
         </div>
     );
