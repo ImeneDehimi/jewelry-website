@@ -1,0 +1,59 @@
+.contact-left {
+    width: 40%;
+}
+.contact-left img{
+    width:100%;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    padding: 20px 25px;
+    gap: 40px;
+}
+.contact-right{
+    width: 40%;
+}
+.contact-right input, .contact-right textarea{
+    padding: 10px 20px;
+    margin: 10px 0;
+    outline: none;
+    border: 1px solid #353435;
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+
+}
+.contact-right textarea{
+    resize: none;
+}
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-right button{
+    padding: 10px 25px;
+    background-color: #fff;
+    color: #353435;
+    border: 1px solid #353435;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+.contact-right button:hover{
+    background-color: #D1AD8F;
+    border: 1px solid #D1AD8F;
+    color: #fff;
+}
+.contact-right form input:focus,
+.contact-right form textarea:focus{ border-color: #D1AD8F;
+}
+@media only screen and (max-width: 430px){
+    .contact-left {
+        width: 100%;
+    }
+    .contact-right {
+        width: 100%;
+    }
+    .contact{
+        display: block;
+    }
+}

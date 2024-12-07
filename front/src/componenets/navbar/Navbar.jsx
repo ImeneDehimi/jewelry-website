@@ -1,8 +1,16 @@
 import "./Navbar.css";
 import "boxicons";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import menuIcon from "./../../assets/menu-icon.png"
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="navbar">
       <div className="head">
@@ -34,7 +42,7 @@ const Navbar = () => {
               type="solid"
               color="#353535"
               size="30px"
-              style={{marginRight:"20px"}}
+              style={{ marginRight: "20px" }}
             ></box-icon>
           </Link>
           <Link>
@@ -43,8 +51,10 @@ const Navbar = () => {
               type="solid"
               name="user"
               size="30px"
+              style={{ marginRight: "20px" }}
             ></box-icon>
           </Link>
+          <img src={menuIcon} alt="" className="menu-icon" onClick={toggleSidebar}/>
         </div>
       </div>
     </div>

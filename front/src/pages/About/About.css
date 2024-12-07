@@ -1,0 +1,44 @@
+
+.about-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.about-title span{
+    width: 40px;
+    height: 2px;
+    background-color: #353435;
+}
+.about-title h1{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #353435;
+}
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 100px;
+    gap: 50px;
+}
+.about-content img{
+    width: 400px;
+}
+.about-content p{
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 2px;
+    color: #353435;
+}
+@media only screen and (max-width: 430px) {
+    .about-content img{
+        width: 350px;
+        margin-bottom: 10px;
+    }
+    .about-content{
+        display: block;
+        margin: 10px 50px;
+    }
+}
