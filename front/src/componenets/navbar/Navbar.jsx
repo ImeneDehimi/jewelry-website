@@ -14,10 +14,15 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="head">
-        <h1 className="logo">
+        <h1 className={isOpen ? "remove":"logo"}>
           Julia Luxe <span>accessoires</span>
         </h1>
-        <ul className="navigation">
+        <ul className={isOpen ? "sidebar":"navigation"}>
+          <div className={isOpen ? "back":"remove"} onClick={toggleSidebar}>
+          <box-icon name='chevron-left' size='30px' color='#353435' ></box-icon>
+          <h5>Back</h5>
+          </div>
+          <hr />
           <NavLink to={"/"}>
             <p>Home</p>
             <hr />{" "}
@@ -35,7 +40,7 @@ const Navbar = () => {
             <hr />
           </NavLink>
         </ul>
-        <div className="nav-right">
+        <div className={isOpen ? "remove":"nav-right"}>
           <Link to={"/cart"}>
             <box-icon
               name="shopping-bag"

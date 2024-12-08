@@ -2,6 +2,10 @@
     width: 200px;
     height: 200px;
     border-radius: 5px 5px 0 0;
+    transition: transform .2s;
+}
+.post img:hover{
+    transform: scale(1.2); 
 }
 .post{
     border: 1px solid #353535;
@@ -9,6 +13,9 @@
     border-radius: 3px;
     font-family: "Work Sans", sans-serif;
     padding-bottom: 10px;
+}
+.post-img{
+    overflow: hidden;
 }
 .post p ,.post h3{
     margin: 10px;

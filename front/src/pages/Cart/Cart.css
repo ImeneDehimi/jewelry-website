@@ -1,110 +1,127 @@
-.cart-container{
-    font-family: "Work Sans", sans-serif;
-    color: #353435;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cart-container {
+  font-family: "Work Sans", sans-serif;
+  color: #353435;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
-.cart-header h2{
-    font-family: "Cinzel", serif;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin: 15px 0;
+.cart-header h2 {
+  font-family: "Cinzel", serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 15px 0;
 }
-.item img{
-    width: 170px;
+.item img {
+  width: 170px;
 }
-.item{
-    display: flex;
-    align-items: center;
-    border: 1px solid #a09e9e;
-    position: relative;
-    padding: 15px;
-    background-color: #f0eeee;
+.item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #a09e9e;
+  position: relative;
+  padding: 15px;
+  background-color: #f0eeee;
+}
+.item p,
+.quantity {
+  padding: 30px;
+}
+.item-name {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+}
+.cart-body {
+  display: flex;
+  min-width: 75%;
+}
+.quantity {
+  display: flex;
+}
+.quantity button {
+  padding: 3px 10px;
+  background-color: #d1ad8f;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.quantity span {
+  padding: 3px 10px;
+  width: 20px;
+  background-color: #fff;
+  color: #353435;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+}
+.checkout {
+  margin-left: 30px;
+  width: 30%;
+}
+.amount {
+  padding: 20px;
+  border: 1px solid #a09e9e;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0eeee;
+}
+.amount h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0 30px 0;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px 0;
+}
+.price h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.price h4 {
+  font-weight: 800;
+  font-size: 18px;
+}
+.amount span {
+  height: 1px;
+  background-color: #a09e9e;
+  margin: 15px 0;
+}
+.checkout button {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #d1ad8f;
+  color: #fff;
+  border: 1px solid #d1ad8f;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.checkout button:hover {
+  color: #353435;
+  border: 1px solid #353435;
+  background-color: #fff;
+}
 
+@media only screen and (max-width: 430px) {
+  .cart-body {
+    display: block;
+  }
+  .item p,
+  .quantity {
+    padding: 10px;
+  }
+  .item img {
+    width: 100px;
+  }
 }
-.item p,.quantity{
-    padding: 30px;
-}
-.quantity{
-    margin-right: 25px;
-}
-.cart-body{
-    display: flex;
-    min-width: 75%;
-}
-.quantity button{
-padding: 3px 10px;
-background-color: #D1AD8F;
-color: #fff;
-border: none;
-font-size: 16px;
-cursor: pointer;
-}
-.quantity span{
-    padding: 3px 10px;
-    max-width: 25px;
-background-color: #fff;
-color: #353435;
-border: none;
-font-size: 16px;
-
-}
-.checkout{
-    margin-left: 30px;
-    width: 30%;
-}
-.amount{
-    padding: 20px;
-    border:1px solid #a09e9e;
-    display: flex;
-    flex-direction: column;
-    background-color: #f0eeee;
-}
-.amount h3{
-    font-size: 18px;
-    font-weight: 600;
-    margin: 10px 0 30px 0;
-}
-.price{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.price p{
-font-size: 16px;
-font-weight: 500;
-margin: 5px 0;
-}
-.price h5{
-    font-weight: 600;
-    font-size: 18px;
-}
-.price h4{
-    font-weight: 800;
-    font-size: 18px;
-}
-.amount span{
-    width: 80%;
-    height: 1px;
-    background-color: #a09e9e;
-    margin: 15px 0;
-}
-.checkout button{
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #D1AD8F;
-    color: #fff;
-    border: 1px solid #D1AD8F;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: .2s ease-in;
-}
-.checkout button:hover{
-    color: #353435;
-    border: 1px solid #353435;
-    background-color: #fff;
-}
-

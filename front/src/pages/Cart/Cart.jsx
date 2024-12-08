@@ -1,4 +1,5 @@
 import Navbar from '../../componenets/navbar/Navbar';
+import Footer from '../../componenets/footer/Footer';
 import './Cart.css';
 import image1 from '../../assets/image1.jpg'
 import { useState } from 'react';
@@ -43,7 +44,7 @@ const Cart = () => {
                     </div>
                     <div className="item">
                         <img src={image1} alt="" />
-                        <p>Lorem ipsum dolor</p>
+                        <p className='item-name'>Lorem </p>
                         <p>2000da</p>
                         <div className="quantity">
                         <button onClick={decrement}>-</button>
@@ -74,6 +75,7 @@ const Cart = () => {
                     </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
