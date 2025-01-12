@@ -66,5 +66,9 @@
     }
     .collection-title{
         margin-top: 0;
+        justify-content: center;
+    }
+    .collection-items{
+        justify-content: center;
     }
 }

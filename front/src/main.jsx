@@ -11,6 +11,8 @@ import Details from './pages/Details/Details.jsx';
 import About from './pages/About/About.jsx';
 import Contact from './pages/Contact/Contact.jsx';
 import Collection from './pages/Collection/Collection.jsx';
+import Signup from './pages/SignUp/Signup.jsx';
+import Signin from './pages/SignIn/Signin.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
   {
     path: "/post",
     element: <Details></Details>,
+  },
+  {
+    path: "/signup",
+    element: <Signup></Signup>,
+  },
+  {
+    path: "/signin",
+    element: <Signin></Signin>,
   },
 ]);
 

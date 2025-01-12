@@ -50,7 +50,7 @@ const Navbar = () => {
               style={{ marginRight: "20px" }}
             ></box-icon>
           </Link>
-          <Link>
+          <Link to={"/signin"}>
             <box-icon
               color="#353535"
               type="solid"
