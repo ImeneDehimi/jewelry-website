@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import Footer from '../../componenets/footer/Footer';
 import Navbar from '../../componenets/navbar/Navbar';
-import './Signup.css';
 
 const Signup = () => {
     return (
