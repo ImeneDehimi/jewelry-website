@@ -13,6 +13,8 @@ import Contact from './pages/Contact/Contact.jsx';
 import Collection from './pages/Collection/Collection.jsx';
 import Signup from './pages/SignUp/Signup.jsx';
 import Signin from './pages/SignIn/Signin.jsx';
+import { store } from './redux/store.js'
+import { Provider } from 'react-redux'
 
 const router = createBrowserRouter([
   {
@@ -36,7 +38,7 @@ const router = createBrowserRouter([
     element: <Cart></Cart>,
   },
   {
-    path: "/post",
+    path: "/post/:postId",
     element: <Details></Details>,
   },
   {
@@ -51,6 +53,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+      <Provider store={store}>
       <RouterProvider router={router} />
+      </Provider>
   </StrictMode>,
 )

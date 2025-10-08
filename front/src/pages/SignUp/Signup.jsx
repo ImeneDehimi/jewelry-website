@@ -15,9 +15,9 @@ const Signup = () => {
         <span></span>
       </div>
       
-        <input type="text" placeholder="Username" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required/>
+        <input type="password" placeholder="Password" required/>
       
       <div className="create-acc">
         <Link><p>Forgot password?</p></Link>

@@ -14,8 +14,8 @@ const Signin = () => {
           <h1>Sign In</h1>
           <span className="login-title-line"></span>
         </div>
-          <input type="text" placeholder="username" />
-          <input type="text" placeholder="Password" />
+          <input type="text" placeholder="username" required />
+          <input type="text" placeholder="Password" required/>
         <div className="create-acc">
           <Link><p>Forgot password?</p></Link>
           <Link to={"/signup"}>

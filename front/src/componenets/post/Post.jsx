@@ -1,15 +1,19 @@
 import './Post.css';
 
-const Post = ({image}) => {
+import { Link } from 'react-router-dom';
+
+// eslint-disable-next-line react/prop-types
+const Post = ({product:{name,price,img, id}}) => {
+
     return (
         <div className='post'>
             <div className="post-img">
-            <img src={image} alt="" />
+            <img src={img} alt="" />
             </div>
             <div className="text">
-            <p>neckless</p>
-            <h3>2500DA</h3>
-            <button >Détails</button>
+            <p>{name}</p>
+            <h3>{price} DA</h3>
+            <Link to={`/post/${id}`}><button>Détails</button></Link>
             </div>
         </div>
     );

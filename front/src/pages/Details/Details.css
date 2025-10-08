@@ -42,3 +42,15 @@ margin: 60px 40px 40px 60px;
     border: 1px solid #353435;
     background-color: #fff;
 }
+
+
+
+@media only screen and (max-width: 430px){
+    .details-body{
+        display: block;
+        margin: 10px;
+    }
+   .details-body-right{
+    margin:20px 10px;
+   }
+}
