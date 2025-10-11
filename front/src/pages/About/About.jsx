@@ -13,7 +13,7 @@ const About = () => {
           <span></span>
         </div>
         <div className="about-content">
-          <img src={about} alt="" />
+          <img src="https://res.cloudinary.com/dnl4sxjlg/image/upload/v1760199484/about_tyj8ys.jpg" alt="about" />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum illum
             incidunt neque, voluptatum libero assumenda, tenetur at quo qui quia

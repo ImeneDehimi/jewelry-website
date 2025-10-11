@@ -77,7 +77,7 @@ const Cart = () => {
                 <h5>{total}DA</h5>
               </div>
             </div>
-            <button>GO TO CHECKOUT</button>
+            <Link to="/checkout"><button>GO TO CHECKOUT</button></Link>
             <Link to="/collection"><button>CONTINUE SHOPPING</button></Link>
           </div>
         </div>
