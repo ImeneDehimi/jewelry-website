@@ -58,7 +58,7 @@ body {
   gap: 15px;
 }
 
-button {
+.checkout-form button {
      width: 100%;
     padding: 10px 25px;
     background-color: #fff;
@@ -69,7 +69,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.checkout-form button:hover {
    background-color: #D1AD8F;
     border: 1px solid #D1AD8F;
     color: #fff;
